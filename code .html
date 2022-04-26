@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset='UTF-8'>
+  <title>coding homepage</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+      <div class="container">
+      <div class="nav-wrapper">
+          <div class="left-side">
+              <div class="nav-link-wrapper">
+                  <a href="code.html">Home</a>
+              </div>
+              <div class="nav-link-wrapper">
+                <a href="why coding.html">why coding?</a>
+            </div>  
+          </div>
+          <div class="right-side">
+            <div class="brand">
+              shereen gamal
+
+            </div>
+
+          </div>
+      </div>
+      <div class="content-wrapper">
+        
+        <div class="code-items-wrapper">
+
+          <div class="code-item-wrapper">
+            <div class="code-img-background" style="background-image: url(images/1pic.jpg)"></div>
+            <div class="img-text-wrapper">
+              <div class="logo-wrapper">
+                <img src="images\logo\crondose.png" alt="">
+              </div>
+              <div class="subtitle"> coding is our view to the future
+              </div>
+            </div>
+          </div>
+
+          <div class="code-item-wrapper">
+            <div class="code-img-background" style="background-image: url(images/2pic.jpg)"></div>
+            <div class="img-text-wrapper">
+              <div class="logo-wrapper">
+                <img src="images\logo\crondose.png" alt="">
+              </div>
+              <div class="subtitle"> programming languages
+              </div>
+            </div>
+          </div>
+
+          <div class="code-item-wrapper">
+           <div class="code-img-background" style="background-image: url(images/3pic.jpg)"></div>
+           <div class="img-text-wrapper">
+             <div class="logo-wrapper">
+               <img src="images\logo\crondose.png" alt="">
+             </div>
+             <div class="subtitle"> coding is our view to the future
+             </div>
+           </div>
+          </div>
+          <div class="code-item-wrapper">
+            <div class="code-img-background" style="background-image: url(images/ai.jpg)"></div>
+            <div class="img-text-wrapper">
+              <div class="logo-wrapper">
+                <img src="images\logo\crondose.png" alt="">
+              </div>
+              <div class="subtitle"> artificial intelligence
+              </div>
+            </div>
+          </div>
+          <div class="code-item-wrapper">
+            <div class="code-img-background" style="background-image: url(images/python-language-logo.jpg)"></div>
+            <div class="img-text-wrapper">
+              <div class="logo-wrapper">
+                <img src="images\logo\crondose.png" alt="">
+              </div>
+              <div class="subtitle"> python language
+              </div>
+            </div>
+          </div>
+          <div class="code-item-wrapper">
+            <div class="code-img-background" style="background-image: url(images/لavaScript.png)"></div>
+            <div class="img-text-wrapper">
+              <div class="logo-wrapper">
+                <img src="images\logo\crondose.png" alt="">
+              </div>
+              <div class="subtitle"> JavaScript language
+              </div>
+            </div>
+          </div>
+        
+      </div>
+
+  </div>
+
+<script>
+  const codeItems = document.querySelectorAll('.code-item-wrapper');
+
+  codeItems.forEach(codeItem => {
+    codeItem.addEventListener('mouseover', () => {
+      console.log(codeItem.childNodes[1].classList)
+      codeItem.childNodes[1].classList.add('image-blur');
+    });
+
+    codeItem .addEventListener('mouseout', () => {
+      console.log(codeItem.childNodes[1].classList)
+      codeItem.childNodes[1].classList.remove('image-blur');
+    });
+  });
+
+</script>
+
+</body>
+
+</head>
+
+
+</html>

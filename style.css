@@ -1,0 +1,114 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+}
+.container{
+    display:grid;
+    grid-template-columns: 1fr;
+}
+.nav-wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+.left-side{
+    display: flex;
+   /* justify-content: space-between;*/
+}
+
+
+.nav-wrapper > .left-side  > div {
+    margin-right: 20px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+.nav-wrapper > .right-side  > div {
+    margin-right: 20px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+.nav-link-wrapper {
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+} 
+.nav-link-wrapper a {
+    color: #8a8a8a;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+.nav-link-wrapper:hover{
+    border-bottom: 1px solid black;
+}
+.nav-link-wrapper a:hover {
+    color:black
+}
+.code-items-wrapper{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.code-item-wrapper{
+    position:relative;
+}
+.code-img-background {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 350px;
+}
+.img-text-wrapper{
+    position:absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.img-text-wrapper .subtitle{
+    transition: 1s;
+    color: transparent;
+}
+
+.img-text-wrapper:hover .subtitle{
+    color: limegreen;
+    font-weight: 600;
+}
+
+.image-blur {
+    transition: 1s;
+    filter: brightness(20%);
+}
+
+.logo-wrapper img {
+
+  width: 50%;
+  margin-bottom: 20px;
+
+}
+.active-nav-link {
+    border-bottom: 1px solid black;
+}
+.active-nav-link a {
+    color: black !important;
+}
+.tow-columns-wrapper{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.code-image-wrapper img {
+    width: 100%;
+}
+  
+.code-content-wrapper {
+    padding: 30px;
+}
+  
+.code-content-wrapper h1 {
+    color: lightseagreen;
+}
